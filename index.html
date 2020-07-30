@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="#">Todo-B5-Alpha</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row text-center mb-3">
+            <div class="col-12">
+                <h6>List of To-Do</h6>
+            </div>
+            <div class="col-12">
+                <span>Total To-Do: <b id="totalItem">0</b></span>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-3" id="contentTodo">
+            <div class="col-12" style="max-width: 650px;">
+                <ul class="list-group">
+
+                    <!-- <li class="list-group-item list-group-item-action">
+                        <input class="form-check-input mr-1" type="checkbox" value="">
+                        Cras justo odio
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <input class="form-check-input mr-1" type="checkbox" value="">
+                        Dapibus ac facilisis in
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12" style="max-width: 650px;">
+                <div class="m-3">
+                    <label for="input_todo" class="form-label">Input To-Do</label>
+                    <input type="text" class="form-control" id="inputTodo" placeholder="Input your to-do here..">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center text-right">
+            <div class="col-12" style="max-width: 650px;">
+                <button type="button" class="btn btn-primary" id="btnAdd">Add</button>
+                <button type="button" class="btn btn-danger" id="btnDelete">Delete</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
